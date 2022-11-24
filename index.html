@@ -21,7 +21,7 @@
   </div>
 </header>
 <main>
-  <div class="cart">
+  <div class="cart rounded">
     <h2>Корзина</h2>
     <div class="cart__selector">
       <label for="selectAll">
@@ -167,8 +167,8 @@
       </div>
     </div>
   </div>
-  <div class="delivery">
-    <div class="delivery__head">
+  <div class="delivery rounded">
+    <div class="card__head">
       <h3>Способ доставки</h3>
       <span>Изменить</span>
     </div>
@@ -225,6 +225,106 @@
       <span>Обратная доставка товаров на склад при отказе - <span class="text--green">бесплатно</span></span>
     </div>
   </div>
+  <div class="payment rounded">
+    <div class="card__head">
+      <h3>Способ оплаты</h3>
+      <span>Изменить</span>
+    </div>
+    <div class="card__info">
+      <div class="svg">
+        <img src="img/mircard.svg" alt="карта мир">
+      </div>
+      <div class="number">
+        1234 56•• •••• 1234
+      </div>
+      <div class="date">
+        01/30
+      </div>
+    </div>
+    <div class="payment__caption">
+      Спишем оплату с карты при получении
+    </div>
+  </div>
+  <div class="taker rounded">
+    <div class="card__head">
+      <h3>Получатель</h3>
+    </div>
+    <div class="form">
+      <form>
+        <input type="text" placeholder="Имя">
+        <input type="text" placeholder="Фамилия">
+        <input type="email" placeholder="Электронная почта">
+        <input type="tel" placeholder="Телефон">
+        <input type="text" placeholder="ИНН">
+      </form>
+      <span>Для таможенного оформления</span>
+
+    </div>
+  </div>
+  <div class="summary">
+    <div class="summary__head">
+      <h3>Итого</h3>
+      <span>2 101 063 сом</span>
+    </div>
+    <div class="summary__info">
+      <div class="total">
+        <span>4 товара</span>
+        <span>2 302 048 сом</span>
+      </div>
+      <div class="discount">
+        <span>Скидка</span>
+        <span>−200 985 сом</span>
+      </div>
+      <div class="delivery">
+        <span>Доставка</span>
+        <span>Бесплатно</span>
+      </div>
+    </div>
+    <div class="summary__cards">
+      <div class="card proof">
+        <img src="img/priceshipping.svg" alt="доставка">
+        <span>Обратная доставка товаров на склад при отказе - <span class="text--green">бесплатно</span></span>
+      </div>
+      <div class="card payment">
+        <div class="checkbox">
+          <input type="checkbox">
+          <span>Списать оплату сразу</span>
+        </div>
+        <span>Спишем оплату с карты при получении</span>
+      </div>
+    </div>
+    <div class="summary__confirm">
+      <button>Заказать</button>
+      <div class="agrees">
+        <img src="img/checkMark.svg" alt="согласие">
+        <span class="text">Соглашаюсь
+          <span class="text--underline">с правилами пользования торговой площадкой</span>
+              и
+          <span class="text--underline">возврата</span>
+        </span>
+      </div>
+    </div>
+  </div>
 </main>
+<footer>
+  <span>© 2022  ООО «Товары и точка»</span>
+</footer>
+<menu>
+  <div class="menu__item">
+    <img src="img/menu/main.svg" alt="главная">
+  </div>
+  <div class="menu__item">
+    <img src="img/menu/catalog.svg" alt="каталог">
+  </div>
+  <div class="menu__item">
+    <img src="img/menu/cart.svg" alt="корзина">
+  </div>
+  <div class="menu__item">
+    <img src="img/menu/favorites.svg" alt="избранное">
+  </div>
+  <div class="menu__item">
+    <img src="img/menu/profile.svg" alt="профиль">
+  </div>
+</menu>
 </body>
 </html>
