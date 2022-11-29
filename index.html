@@ -11,297 +11,408 @@
 <body>
 <header>
   <div class="menu">
-    <img src="img/menu.svg" alt="меню">
+    <img src="img/menu.svg" class="mobile" alt="меню">
+    <img src="img/menu/burger.svg" class="desktop" alt="меню">
   </div>
-  <div>
-    <h1>Товары и точка</h1>
-  </div>
+  <h1><span>Товары</span><span>и точка</span></h1>
   <div class="search">
-    <img src="img/lupa.svg" alt="поиск">
+    <div class="desktop">
+      <input type="text" placeholder="Я ищу...">
+      <img src="img/lupa.svg" alt="лупа">
+    </div>
+    <img src="img/lupa.svg" class="mobile" alt="поиск">
+  </div>
+  <div class="links">
+    <div class="profile">
+      <img src="img/menu/profile.svg" alt="профиль">
+      <span>Профиль</span>
+    </div>
+    <div class="cart">
+      <img src="img/menu/cart.svg" alt="корзина">
+      <span>Корзина</span>
+    </div>
   </div>
 </header>
 <main>
-  <div class="cart rounded">
-    <h2>Корзина</h2>
-    <div class="cart__selector">
-      <label for="selectAll">
-        <input type="checkbox" name="selectAll">
-        Выбрать все
-      </label>
-      <div class="cart__selector__arrow">
-        <img src="img/arrowUp.svg" alt="развернуть">
-      </div>
-    </div>
-    <div class="cart__items">
-      <div class="cart__item">
-        <div class="overview">
-          <div class="overview__image">
-            <img src="img/products/Frame3853.png" alt="изображение">
-            <div class="item__checkbox">
-              <input type="checkbox" checked>
-            </div>
-            <div class="item__size">
-              <span>56</span>
-            </div>
-          </div>
-          <div class="overview__description">
-            <div class="price">
-              <span class="price__real">522 сом</span>
-              <span class="price__discount">1051 сом</span>
-            </div>
-            <div class="name">
-              <span>Футболка UZcotton мужская</span>
-            </div>
-            <div class="chars">
-              <span>Цвет: белый</span>
-            </div>
-            <div class="coledinoWB">
-              Коледино WB
-            </div>
-          </div>
-        </div>
-        <div class="actions">
-          <div class="count__btns">
-            <div class="btn disabled">
-              −
-            </div>
-            <div class="count">
-              1
-            </div>
-            <div class="btn">
-              +
-            </div>
-          </div>
-          <div class="items__left">
-            <span>Осталось 2 шт.</span>
-          </div>
-          <div class="quickActions">
-            <img src="img/heart.svg" alt="дбоавить в избранное">
-            <img src="img/trashCan.svg" alt="удалить">
-          </div>
+  <div class="main__info">
+    <div class="cart rounded">
+      <h2>Корзина</h2>
+      <div class="cart__selector">
+        <label for="selectAll">
+          <input type="checkbox" id="selectAll" name="selectAll">
+          Выбрать все
+        </label>
+        <div class="cart__selector__arrow">
+          <img src="img/arrowUp.svg" alt="развернуть">
         </div>
       </div>
-      <div class="cart__item">
-        <div class="overview">
-          <div class="overview__image">
-            <img src="img/products/Frame%203853.png" alt="изображение">
-            <div class="item__checkbox">
-              <input type="checkbox" checked>
+      <div class="cart__items">
+        <div class="cart__item">
+          <div class="overview">
+            <div class="overview__image">
+              <img src="img/products/Frame3853.png" alt="изображение">
+              <div class="item__checkbox">
+                <input type="checkbox" checked>
+              </div>
+              <div class="item__size">
+                <span>56</span>
+              </div>
+            </div>
+            <div class="overview__description">
+              <div class="price">
+                <span class="price__real">522 сом</span>
+                <span class="price__discount">1051 сом</span>
+              </div>
+              <div class="name">
+                <span>Футболка UZcotton мужская</span>
+              </div>
+              <div class="chars">
+                <span>Цвет: белый</span>
+              </div>
+              <div class="coledinoWB">
+                Коледино WB
+              </div>
             </div>
           </div>
-          <div class="overview__description">
-            <div class="price">
-              <span class="price__real">2 100 047 сом</span>
-              <span class="price__discount">2 300 047 сом</span>
+          <div class="actions">
+            <div class="count__btns">
+              <div class="btn disabled">
+                −
+              </div>
+              <div class="count">
+                1
+              </div>
+              <div class="btn">
+                +
+              </div>
             </div>
-            <div class="name">
-              <span>Силиконовый чехол картхолдер (отверстия) для...</span>
+            <div class="items__left">
+              <span>Осталось 2 шт.</span>
             </div>
-            <div class="chars">
-              <span>Цвет: прозрачный</span>
-            </div>
-            <div class="coledinoWB">
-              Коледино WB
-            </div>
-          </div>
-        </div>
-        <div class="actions">
-          <div class="count__btns">
-            <div class="btn">
-              −
-            </div>
-            <div class="count">
-              255
-            </div>
-            <div class="btn">
-              +
-            </div>
-          </div>
-          <div class="quickActions">
-            <img src="img/heart.svg" alt="дбоавить в избранное">
-            <img src="img/trashCan.svg" alt="удалить">
-          </div>
-        </div>
-      </div>
-      <div class="cart__item">
-        <div class="overview">
-          <div class="overview__image">
-            <img src="img/products/image%202.png" alt="изображение">
-            <div class="item__checkbox">
-              <input type="checkbox">
-            </div>
-          </div>
-          <div class="overview__description">
-            <div class="price">
-              <span class="price__real">494 сом</span>
-              <span class="price__discount">950 сом</span>
-            </div>
-            <div class="name">
-              <span>Карандаши цветные Faber-Castell "Замок", набор 24 цв...</span>
-            </div>
-            <div class="coledinoWB">
-              Коледино WB
+            <div class="quickActions">
+              <img src="img/heart.svg" alt="дбоавить в избранное">
+              <img src="img/trashCan.svg" alt="удалить">
             </div>
           </div>
         </div>
-        <div class="actions">
-          <div class="count__btns">
-            <div class="btn">
-              −
+        <div class="cart__item">
+          <div class="overview">
+            <div class="overview__image">
+              <img src="img/products/Frame%203853.png" alt="изображение">
+              <div class="item__checkbox">
+                <input type="checkbox" checked>
+              </div>
             </div>
-            <div class="count">
-              2
-            </div>
-            <div class="btn">
-              +
-            </div>
-          </div>
-          <div class="items__left">
-            <span>Осталось 2 шт.</span>
-          </div>
-          <div class="quickActions">
-            <img src="img/heart.svg" alt="дбоавить в избранное">
-            <img src="img/trashCan.svg" alt="удалить">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="delivery rounded">
-    <div class="card__head">
-      <h3>Способ доставки</h3>
-      <span>Изменить</span>
-    </div>
-    <div class="delivery__store">
-      <span class="title">Пункт выдачи</span>
-      <span class="address">Бишкек, улица Ахматбека Суюмбаева, 12/1</span>
-      <div class="rates">
-        <div class="stars">
-          <img src="img/star_fill.svg" alt="звезда">
-          <span>4.99</span>
-        </div>
-        <span class="workTime">Ежедневно с 10 до 21 </span>
-      </div>
-    </div>
-    <div class="delivery__price">
-      <h3 class="title">Стоимость доставки</h3>
-      <span>Бесплатно</span>
-    </div>
-    <div class="delivery__time">
-      <div class="delivery__item">
-        <h3 class="title">5—6 февраля</h3>
-        <div class="items">
-          <div class="item">
-            <img src="img/products/Frame3853.png" alt="изображение товара">
-          </div>
-          <div class="item">
-            <img src="img/products/Frame%203853.png" alt="изображение товара">
-            <div class="item__info">
-              182
+            <div class="overview__description">
+              <div class="price">
+                <span class="price__real">2 100 047 сом</span>
+                <span class="price__discount">2 300 047 сом</span>
+              </div>
+              <div class="name">
+                <span>Силиконовый чехол картхолдер (отверстия) для...</span>
+              </div>
+              <div class="chars">
+                <span>Цвет: прозрачный</span>
+              </div>
+              <div class="coledinoWB">
+                Коледино WB
+              </div>
             </div>
           </div>
-          <div class="item">
-            <img src="img/products/image%202.png" alt="изображение товара">
-            <div class="item__info">
-              2
+          <div class="actions">
+            <div class="count__btns">
+              <div class="btn">
+                −
+              </div>
+              <div class="count">
+                255
+              </div>
+              <div class="btn">
+                +
+              </div>
+            </div>
+            <div class="quickActions">
+              <img src="img/heart.svg" alt="дбоавить в избранное">
+              <img src="img/trashCan.svg" alt="удалить">
             </div>
           </div>
         </div>
-      </div>
-      <div class="delivery__item">
-        <h3 class="title">7—8 февраля</h3>
-        <div class="items">
-          <div class="item">
-            <img src="img/products/Frame%203853.png" alt="">
-            <div class="item__info">
-              16
+        <div class="cart__item">
+          <div class="overview">
+            <div class="overview__image">
+              <img src="img/products/image%202.png" alt="изображение">
+              <div class="item__checkbox">
+                <input type="checkbox">
+              </div>
+            </div>
+            <div class="overview__description">
+              <div class="price">
+                <span class="price__real">494 сом</span>
+                <span class="price__discount">950 сом</span>
+              </div>
+              <div class="name">
+                <span>Карандаши цветные Faber-Castell "Замок", набор 24 цв...</span>
+              </div>
+              <div class="coledinoWB">
+                Коледино WB
+              </div>
+            </div>
+          </div>
+          <div class="actions">
+            <div class="count__btns">
+              <div class="btn">
+                −
+              </div>
+              <div class="count">
+                2
+              </div>
+              <div class="btn">
+                +
+              </div>
+            </div>
+            <div class="items__left">
+              <span>Осталось 2 шт.</span>
+            </div>
+            <div class="quickActions">
+              <img src="img/heart.svg" alt="дбоавить в избранное">
+              <img src="img/trashCan.svg" alt="удалить">
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="delivery__footer">
-      <img src="img/priceshipping.svg" alt="доставка">
-      <span>Обратная доставка товаров на склад при отказе - <span class="text--green">бесплатно</span></span>
-    </div>
-  </div>
-  <div class="payment rounded">
-    <div class="card__head">
-      <h3>Способ оплаты</h3>
-      <span>Изменить</span>
-    </div>
-    <div class="card__info">
-      <div class="svg">
-        <img src="img/mircard.svg" alt="карта мир">
+    <div class="unavailable">
+      <div class="head">
+        <h3>Отсутствуют · 3 товара</h3>
+        <img src="img/arrowUp.svg" alt="свернуть">
       </div>
-      <div class="number">
-        1234 56•• •••• 1234
+      <div class="cart__items">
+        <div class="cart__item">
+          <div class="overview">
+            <div class="overview__image">
+              <img src="img/products/Frame3853.png" alt="изображение">
+              <div class="item__size">
+                <span>56</span>
+              </div>
+            </div>
+            <div class="overview__description">
+              <div class="name">
+                <span>Футболка UZcotton мужская</span>
+              </div>
+              <div class="chars">
+                <span>Цвет: белый</span>
+              </div>
+            </div>
+          </div>
+          <div class="actions">
+            <div class="quickActions">
+              <img src="img/heart.svg" alt="дбоавить в избранное">
+              <img src="img/trashCan.svg" alt="удалить">
+            </div>
+          </div>
+        </div>
+        <div class="cart__item">
+          <div class="overview">
+            <div class="overview__image">
+              <img src="img/products/Frame%203853.png" alt="изображение">
+            </div>
+            <div class="overview__description">
+              <div class="name">
+                <span>Силиконовый чехол картхолдер (отверстия) для...</span>
+              </div>
+              <div class="chars">
+                <span>Цвет: прозрачный</span>
+              </div>
+            </div>
+          </div>
+          <div class="actions">
+            <div class="quickActions">
+              <img src="img/heart.svg" alt="дбоавить в избранное">
+              <img src="img/trashCan.svg" alt="удалить">
+            </div>
+          </div>
+        </div>
+        <div class="cart__item">
+          <div class="overview">
+            <div class="overview__image">
+              <img src="img/products/image%202.png" alt="изображение">
+            </div>
+            <div class="overview__description">
+              <div class="name">
+                <span>Карандаши цветные Faber-Castell "Замок", набор 24 цв...</span>
+              </div>
+            </div>
+          </div>
+          <div class="actions">
+            <div class="quickActions">
+              <img src="img/heart.svg" alt="дбоавить в избранное">
+              <img src="img/trashCan.svg" alt="удалить">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="date">
-        01/30
+    </div>
+    <div class="delivery rounded">
+      <div class="card__head">
+        <h3>Способ доставки</h3>
+        <span>Изменить</span>
       </div>
-    </div>
-    <div class="payment__caption">
-      Спишем оплату с карты при получении
-    </div>
-  </div>
-  <div class="taker rounded">
-    <div class="card__head">
-      <h3>Получатель</h3>
-    </div>
-    <div class="form">
-      <form>
-        <input type="text" placeholder="Имя">
-        <input type="text" placeholder="Фамилия">
-        <input type="email" placeholder="Электронная почта">
-        <input type="tel" placeholder="Телефон">
-        <input type="text" placeholder="ИНН">
-      </form>
-      <span>Для таможенного оформления</span>
-
-    </div>
-  </div>
-  <div class="summary">
-    <div class="summary__head">
-      <h3>Итого</h3>
-      <span>2 101 063 сом</span>
-    </div>
-    <div class="summary__info">
-      <div class="total">
-        <span>4 товара</span>
-        <span>2 302 048 сом</span>
+      <div class="delivery__store">
+        <span class="title">Пункт выдачи</span>
+        <span class="address">Бишкек, улица Ахматбека Суюмбаева, 12/1</span>
+        <div class="rates">
+          <div class="stars">
+            <img src="img/star_fill.svg" alt="звезда">
+            <span>4.99</span>
+          </div>
+          <span class="workTime">Ежедневно с 10 до 21 </span>
+        </div>
       </div>
-      <div class="discount">
-        <span>Скидка</span>
-        <span>−200 985 сом</span>
-      </div>
-      <div class="delivery">
-        <span>Доставка</span>
+      <div class="delivery__price">
+        <h3 class="title">Стоимость доставки</h3>
         <span>Бесплатно</span>
       </div>
-    </div>
-    <div class="summary__cards">
-      <div class="card proof">
+      <div class="delivery__time">
+        <div class="delivery__item">
+          <h3 class="title">5—6 февраля</h3>
+          <div class="items">
+            <div class="item">
+              <img src="img/products/Frame3853.png" alt="изображение товара">
+            </div>
+            <div class="item">
+              <img src="img/products/Frame%203853.png" alt="изображение товара">
+              <div class="item__info">
+                182
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/products/image%202.png" alt="изображение товара">
+              <div class="item__info">
+                2
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="delivery__item">
+          <h3 class="title">7—8 февраля</h3>
+          <div class="items">
+            <div class="item">
+              <img src="img/products/Frame%203853.png" alt="">
+              <div class="item__info">
+                16
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="delivery__footer">
         <img src="img/priceshipping.svg" alt="доставка">
         <span>Обратная доставка товаров на склад при отказе - <span class="text--green">бесплатно</span></span>
       </div>
-      <div class="card payment">
-        <div class="checkbox">
-          <input type="checkbox">
-          <span>Списать оплату сразу</span>
+    </div>
+    <div class="payment rounded">
+      <div class="card__head">
+        <h3>Способ оплаты</h3>
+        <span>Изменить</span>
+      </div>
+      <div class="card__info">
+        <div class="svg">
+          <img src="img/mircard.svg" alt="карта мир">
         </div>
-        <span>Спишем оплату с карты при получении</span>
+        <div class="number">
+          1234 56•• •••• 1234
+        </div>
+        <div class="date">
+          01/30
+        </div>
+      </div>
+      <div class="payment__caption">
+        Спишем оплату с карты при получении
       </div>
     </div>
-    <div class="summary__confirm">
-      <button>Заказать</button>
-      <div class="agrees">
-        <img src="img/checkMark.svg" alt="согласие">
-        <span class="text">Соглашаюсь
+    <div class="taker rounded">
+      <div class="card__head">
+        <h3>Получатель</h3>
+      </div>
+      <div class="form">
+        <form>
+          <input type="text" placeholder="Имя">
+          <input type="text" placeholder="Фамилия">
+          <input type="email" placeholder="Электронная почта">
+          <input type="tel" placeholder="Телефон">
+          <input type="text" placeholder="ИНН">
+        </form>
+        <span>Для таможенного оформления</span>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="summary">
+    <div class="summary__content">
+      <div class="summary__head">
+        <h3>Итого</h3>
+        <span>2 101 063 сом</span>
+      </div>
+      <div class="summary__info">
+        <div class="total">
+          <span>4 товара</span>
+          <span>2 302 048 сом</span>
+        </div>
+        <div class="discount">
+          <span>Скидка</span>
+          <span>−200 985 сом</span>
+        </div>
+        <div class="delivery">
+          <span>Доставка</span>
+          <span>Бесплатно</span>
+        </div>
+      </div>
+      <div class="summary__delivery">
+        <div class="card__head">
+          <h3>Доставка в пункт выдачи</h3>
+          <img src="img/pen.svg" alt="изменить">
+        </div>
+        <span>Бишкек, улица Ахматбека Суюмбаева, 12/1</span>
+        <span class="text--magenta">5–8 фев</span>
+      </div>
+      <div class="summary__cards">
+        <div class="card proof">
+          <img src="img/priceshipping.svg" alt="доставка">
+          <span>Обратная доставка товаров на склад при отказе - <span class="text--green">бесплатно</span></span>
+        </div>
+        <div class="payment">
+          <div class="card__head">
+            <h3>Оплата картой</h3>
+            <img src="img/pen.svg" alt="изменить">
+          </div>
+          <div class="card__info">
+            <div class="svg">
+              <img src="img/mircard.svg" alt="карта мир">
+            </div>
+            <div class="number">
+              1234 56•• •••• 1234
+            </div>
+          </div>
+        </div>
+        <div class="card payment">
+          <div class="checkbox">
+            <input type="checkbox">
+            <span>Списать оплату сразу</span>
+          </div>
+          <span>Спишем оплату с карты при получении</span>
+        </div>
+      </div>
+      <div class="summary__confirm">
+        <button>Заказать</button>
+        <div class="agrees">
+          <img src="img/checkMark.svg" alt="согласие">
+          <span class="text">Соглашаюсь
           <span class="text--underline">с правилами пользования торговой площадкой</span>
               и
           <span class="text--underline">возврата</span>
         </span>
+        </div>
       </div>
     </div>
   </div>
