@@ -485,7 +485,7 @@ header .menu .desktop {
   justify-content: flex-end;
 }
 
-header .search .desktop, header .links, .summary__delivery, .summary__cards .payment, .desktop .price, .item__mark {
+header .search .desktop, header .links, .summary__delivery, .desktop .price, .item__mark {
   display: none;
 }
 
@@ -497,6 +497,17 @@ header .search .desktop, header .links, .summary__delivery, .summary__cards .pay
 @media (min-width: 1024px) {
   .overview__description .price {
     display: none !important;
+  }
+  .summary__head {
+    font-size: 24px;
+  }
+
+  .summary .card__head h3 {
+    font-size: 16px;
+  }
+
+  .summary__confirm {
+    margin-bottom: 0;
   }
 
   header {
@@ -785,6 +796,7 @@ header .search .desktop, header .links, .summary__delivery, .summary__cards .pay
   .summary {
     width: 430px;
   }
+
   .form {
     max-width: 700px;
   }
