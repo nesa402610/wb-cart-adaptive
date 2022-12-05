@@ -84,25 +84,27 @@ header .menu .desktop {
 }
 form label {
   position: relative;
+  flex: 1 1 auto;
+  flex-basis: 33.33333%;
 }
 label span {
   position: absolute;
   font-size: 16px;
+  color: var(--systemGray);
 }
 form label span {
   position: absolute;
   pointer-events: none;
-  left: 15px;
-  right: 15px;
+  left: 0;
   top: 0;
   white-space: nowrap;
   overflow: hidden;
   transition: .3s;
 }
-input:focus ~ form label span,
-input:not(:focus):valid ~ form label span {
+.form-input:focus~.form-label,
+.form-input:not(:focus):valid~.form-label {
   top: -10px;
-  font-size: 100px;
+  font-size: 10px;
 }
 
 
