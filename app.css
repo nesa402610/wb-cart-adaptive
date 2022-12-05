@@ -82,6 +82,29 @@ menu {
 header .menu .desktop {
   display: none;
 }
+form label {
+  position: relative;
+}
+label span {
+  position: absolute;
+  font-size: 16px;
+}
+form label span {
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  right: 15px;
+  top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: .3s;
+}
+input:focus ~ form label span,
+input:not(:focus):valid ~ form label span {
+  top: -10px;
+  font-size: 100px;
+}
+
 
 .cart h2 {
   font-size: 20px;
@@ -359,7 +382,7 @@ header .menu .desktop {
   line-height: 24px;
 }
 
-.taker .form span {
+.taker .form .subtitle {
   margin-top: 4px;
   font-size: 12px;
   line-height: 14px;
@@ -498,6 +521,7 @@ header .search .desktop, header .links, .summary__delivery, .desktop .price, .it
   .overview__description .price {
     display: none !important;
   }
+
   .summary__head {
     font-size: 24px;
   }

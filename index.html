@@ -378,16 +378,33 @@
       <div class="form">
         <form>
           <div class="inline__form">
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Фамилия">
+            <label>
+              <input type="text">
+              <span>Имя</span>
+            </label>
+            <label>
+              <span>Фамилия</span>
+              <input type="text">
+            </label>
           </div>
           <div class="inline__form">
-            <input type="email" placeholder="Электронная почта">
-            <input type="tel" placeholder="Телефон">
-            <input type="text" placeholder="ИНН">
+            <label>
+              <span>Электронная почта</span>
+              <input type="email">
+            </label>
+            <label>
+              <span>Телефон</span>
+              <input id="phoneInput" type="tel">
+            </label>
+           <div>
+             <label>
+               <span>ИНН</span>
+               <input type="text">
+             </label>
+             <span class="subtitle">Для таможенного оформления</span>
+           </div>
           </div>
         </form>
-        <span>Для таможенного оформления</span>
       </div>
     </div>
   </div>
@@ -482,4 +499,10 @@
   </div>
 </menu>
 </body>
+<script>
+  document.getElementById('phoneInput').addEventListener('blur', function (e) {
+    let x = e.target.value.replace(/\D/g, '').match(/(\d{3})(\d{3})(\d{2})(\d{2})/);
+    e.target.value = '+7 (' + x[1] + ') ' + x[2] + '-' + x[3] + '-' + x[4];
+  });
+</script>
 </html>
